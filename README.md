@@ -17,6 +17,6 @@ File transfer from the NAS to Linux can be achieved by employing the
 instance, to get the file `example.txt` that someone put into the
 `Transfer` folder, use the following command:
 
-    ```console
-    smbget --user=$USER --workgroup=scidom.de smb://nas10.scidom.de/Transfer/example.txt
-    ```
+```
+smbget --user=$USER --workgroup=scidom.de smb://nas10.scidom.de/Transfer/example.txt
+```
