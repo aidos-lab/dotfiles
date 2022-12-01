@@ -10,6 +10,16 @@ compute cluster? How to transfer files?
 
 Here are some recipes that might be helpful.
 
+### Starting an interactive GPU session on the cluster
+
+This can be very helpful for debugging. Essentially, this command will
+reserve a GPU for you, then start a login shell. This permits you to run
+all kinds of commands and have them executed on the GPU itself:
+
+```
+srun -p interactive_gpu_p --qos interactive_gpu --gres=gpu:1 --nice=1000 --pty /bin/bash -i
+```
+
 ### Transferring files from shares to Linux
 
 File transfer from the NAS to Linux can be achieved by employing the
