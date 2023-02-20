@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# es.sh: easy submit --- submit a job quickly to the cluster
+# es-gpu.sh: easy submit --- submit a job quickly to the cluster
 #
 # This script tries to provide a 'fire and forget' solution for
 # submitting GPU jobs to the cluster. The parameters may not be
