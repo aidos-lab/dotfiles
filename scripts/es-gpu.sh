@@ -24,7 +24,7 @@ sbatch -p gpu_p               \
        -J ${NAME}             \
        -o "${NAME}_%j.out"    \
        --gres=gpu:1           \
-       --qos=gpu              \
+       --qos=gpu_normal       \
        --cpus-per-task=4      \
        --mem=8G               \
        --nice=10000           \
