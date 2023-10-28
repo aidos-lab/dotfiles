@@ -18,7 +18,7 @@ fi
 MODE=$1
 
 # Define the command to run Jupyter notebook
-CMD="jupyter-notebook --port 8888 --no-browser --ip=0.0.0.0 --notebook-dir=$HOME/ --NotebookApp.allow_origin='*'"
+CMD="jupyter-notebook --port 8888 --no-browser --ip=0.0.0.0 --notebook-dir=$HOME/"
 
 # Define the job name from second argument
 NAME=$2
