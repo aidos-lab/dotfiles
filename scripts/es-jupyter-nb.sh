@@ -29,10 +29,10 @@ if [ -z "$NAME" ]; then
 fi
 
 if [ "$MODE" == "gpu" ]; then
-  srun -p gpu_p               \
+  srun -p interactive_gpu_p   \
        -J ${NAME}             \
        --gres=gpu:1           \
-       --qos=gpu_normal       \
+       --qos=interactive_gpu  \
        --cpus-per-task=4      \
        --mem=8G               \
        --nice=10000           \
